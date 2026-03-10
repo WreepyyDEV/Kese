@@ -1,0 +1,67 @@
+decimal_format: 0.0#
+
+database:
+  type: sqlite # veya 'mysql'
+  sqlite-file: database.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: myDatabase
+    username: root
+    password: password
+
+messages:
+  no-permission: '&8[&aTowny&8] &cBu komutu kullanmaya yetkin yok!'
+  unexpected-error: '&8[&aTowny&8] &cBu komut çalıştırılırken beklenmeyen bir hata meydana geldi!'
+  not-online: '&8[&aTowny&8] &cBelirtilen oyuncu bulunamadı ya da çevrimiçi değil.'
+  only-players: '&8[&aTowny&8] &cBu komutu sadece oyuncular kullanabilir!'
+  not-a-number: '&8[&aTowny&8] &7Miktar sayı olmalıdır!'
+  self: '&8[&aTowny&8] &7Kendine altın gönderemezsin!'
+  insufficient-money: '&8[&aTowny&8] &7Kesende yeterli miktarda altın yok!'
+  insufficient-gold: '&8[&aTowny&8] &7Envanterinde yeterli miktarda altın yok!'
+  insufficient-space: '&8[&aTowny&8] &7Envanterinde yer kalmadığı için altınlar yere düştü!'
+  error-occurred: '&8[&aTowny&8] &7Bir hata oluştu, işlem gerçekleştirilemiyor!'
+  money-info: '&8[&aTowny&8] &a[AMOUNT] &7altınınız var.'
+
+  help:
+    - '&6.oOo.__________________.[ &e/kese &6].__________________.oOo.'
+    - '&a/kese &7Kesenizde bulunan altını gösterir.'
+    - '&a/kese koy (miktar) &7Keseye altın koyar.'
+    - '&a/kese al (miktar) &7Keseden altın alır.'
+    - '&a/altin gonder (oyuncu) (miktar) &7Hedef oyuncuya altın gönderir.'
+
+  admin-help:
+    - '&6.oOo.________________.[ &e/keseadmin &6].________________.oOo.'
+    - '&a/keseadmin set (oyuncu) (miktar) &7Miktarı ayarlar.'
+    - '&a/keseadmin add (oyuncu) (miktar) &7Miktar ekler.'
+    - '&a/keseadmin remove (oyuncu) (miktar) &7Miktar çıkarır.'
+    - '&a/keseadmin balance (oyuncu) &7Bakiye gösterir.'
+
+  kese:
+    withdraw:
+      - ' '
+      - '&8[&aTowny&8] &6[FORMATTED] &7altın aldın.'
+      - '&8[&aTowny&8] &fKesendeki yeni altın miktarı &6[BALANCE] &fAltın'
+      - '&8[&aTowny&8] &c&l- &6[FORMATTED]'
+      - ' '
+    deposit:
+      - ' '
+      - '&8[&aTowny&8] &7Envanterindeki &6[FORMATTED] &7altın keseye koyuldu.'
+      - '&8[&aTowny&8] &fKesendeki yeni altın miktarı &6[BALANCE] &fAltın'
+      - '&8[&aTowny&8] &a&l+ &a[FORMATTED]'
+      - ' '
+
+  gold:
+    sender:
+      - '&8[&aTowny&8] &7Yeni altın miktarı &6[BALANCE] Altın'
+      - '&8[&aTowny&8] &c&l- &6[FORMATTED] &8| &e[TARGET] &7oyuncusuna gönderildi'
+    receiver:
+      - '&8[&aTowny&8] &7Yeni altın miktarı &6[BALANCE] Altın'
+      - '&8[&aTowny&8] &a&l+ &a[FORMATTED] &8| &e[SENDER] &7tarafından gönderildi'
+
+  admin:
+    set-success: '&8[&aTowny&8] &a[TARGET] &7altın miktarı &a[AMOUNT] &7olarak ayarlandı.'
+    add-success: '&8[&aTowny&8] &a[TARGET] &7kesesine &a[AMOUNT] &7altın eklendi.'
+    remove-success: '&8[&aTowny&8] &a[TARGET] &7kesesinden &a[AMOUNT] &7altın çıkarıldı.'
+    balance-check: '&8[&aTowny&8] &a[TARGET] &7oyuncunun altın miktarı: &a[BALANCE] Altın'
+    reload-success: '&8[&aTowny&8] &7Yapılandırma dosyası başarıyla yenilendi!'
