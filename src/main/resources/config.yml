@@ -22,6 +22,8 @@ messages:
   insufficient-space: '&8[&aTowny&8] &7Envanterinde yer kalmadığı için altınlar yere düştü!'
   error-occurred: '&8[&aTowny&8] &7Bir hata oluştu, işlem gerçekleştirilemiyor!'
   money-info: '&8[&aTowny&8] &a[AMOUNT] &7altınınız var.'
+  partial-withdraw: §8[§aTowny§8] §cEnvanterin dolu olduğu için [REFUND] altın hesabına
+    geri iade edildi.
 
   help:
     - '&6.oOo.__________________.[ &e/kese &6].__________________.oOo.'
